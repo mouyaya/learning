@@ -1,0 +1,112 @@
+/*通配选择*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow-x: hidden;
+    background: url("../images/1.jpg");
+    background-attachment: fixed;
+}
+/*版心宽度*/
+.layout {
+    width: 1200px;
+    margin: 0 auto;
+    /*background-color: pink;*/
+    /*height: 2000px;*/
+}
+button {
+    cursor: pointer;!important;
+}
+
+/*清除浮动*/
+.clearfix:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/*字体图标*/
+
+@font-face {font-family: "iconfont";
+    src: url('../fonts/iconfont.eot'); /* IE9*/
+    src: url('../fonts/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/iconfont.woff') format('woff'), /* chrome, firefox */
+    url('../fonts/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('../fonts/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+    font-family:"iconfont" !important;
+    font-size:16px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/*
+.section02-text i {
+    font-family: 'icomoon';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 28px;
+}
+
+.section03 i {
+    font-family: 'icomoon';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 28px;
+}
+
+.section04-text button i {
+    font-family: 'icomoon';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 28px;
+    color: #fff;
+}
+
+.section05 .floatL div {
+    width: 55px;
+    height: 55px;
+    background-color: #16a086;
+    line-height: 55px;
+    text-align: center;
+
+}
+
+.section05 .floatL i {
+    font-family: 'icomoon';
+    font-style: normal;
+    color: #fff;
+    font-size: 50px;
+}
+*/
+
+body {
+    /*height: 4000px;*/
+}
+
+/*列表通用样式*/
+li {
+    list-style: none;!important;
+}
+
+/*超链接通用样式*/
+a {
+    text-decoration: none;!important;
+}
+
+/*左浮动*/
+.floatL {
+    float: left;
+}
+
+/*右浮动*/
+.floatR {
+    float: right;
+}

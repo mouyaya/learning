@@ -1,0 +1,1011 @@
+/*头部视频和logo部分开始*/
+.videoAndLogo video {
+    width: 100%;
+}
+
+.videoAndLogo {
+    position: relative;
+    height: 585px;
+}
+
+.videoAndLogo .logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 999;
+    transform: translateX(-50%);
+    background-color: #f6f5f5;
+    padding: 30px 34px;
+    cursor: pointer;
+    transition: all .4s;
+    border-radius: 1px;
+}
+
+.videoAndLogo .logo:hover {
+    background-color: #fff;
+}
+
+.videoAndLogo .logo img {
+    width: 300px;
+}
+
+/*头部视频和logo部分结束*/
+
+/*导航部分开始*/
+
+/*主菜单*/
+.fixedNavOne {
+    position: fixed;
+    top: 0;
+    left: -94%;
+    z-index: 9999;
+}
+
+.moveNav {
+    height: 130px;
+    background-color: #fff;
+    position: relative;
+}
+
+nav ul {
+    background-color: #fff;
+    height: 130px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1349px;
+    box-sizing: border-box;
+    padding-left: 90px;
+    z-index: 999;
+}
+
+.moveNav .fixedUl {
+    position: fixed;
+    top: 0;
+    left: -1349px;
+}
+
+.moveNav .fixedRNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav ul li {
+    height: 130px;
+    float: left;
+    line-height: 130px;
+    padding: 0 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+nav ul li:not(.phone):hover {
+    background-color: #f5f4f0;
+}
+
+nav ul li a {
+    color: #888;
+    display: block;
+}
+
+nav ul li.phone {
+    padding: 0;
+}
+
+nav ul li.phone a {
+    color: #2e91b3;
+    font-size: 30px;
+    margin-left: 15px;
+}
+
+nav ul li.noneLi {
+    width: 130px;
+    padding: 0;
+    background-color: #2e91b3;
+    text-align: center;
+    display: none;
+/ / js控制显示
+}
+
+nav ul li.liOne {
+    /*display: none;*/
+}
+
+nav ul li.noneLi:hover {
+    background-color: rgba(46, 145, 179, 0.58);
+}
+
+nav ul li.noneLi a {
+    color: #fff;
+}
+
+/*最右边移动固定导航*/
+.fixedNav {
+    height: 130px;
+    box-shadow: 0 0 3px -1px rgba(45, 44, 65, 0.64);
+    position: absolute;
+    background-color: #fff;
+    left: 100%;
+    width: 335px;
+    z-index: 9999;
+}
+
+.fixedNav img {
+    width: 255px;
+}
+
+.fixedNav a {
+    padding: 30px 0;
+    box-sizing: border-box;
+    display: block;
+    height: 100%;
+    transition: all .3s;
+    float: left;
+}
+
+.fixedNav a:hover {
+    opacity: 0.5;
+}
+
+.fixedNav span {
+    display: block;
+    height: 130px;
+    width: 80px;
+    background-color: #2e91b3;
+    float: left;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.fixedNav span div {
+    width: 40px;
+    height: 4px;
+    background-color: #fff;
+    margin: 10px auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -20px;
+    margin-top: -2px;
+}
+
+.fixedNav span div:nth-child(1) {
+    margin-top: -15px;
+    transition: all .1s;
+}
+
+.fixedNav span div:nth-child(3) {
+    margin-top: 10px;
+    transition: all .2s;
+}
+
+.fixedNav span:hover div:nth-child(1) {
+    transform: rotate(90deg) translate(10px);
+}
+
+.fixedNav span:hover div:nth-child(3) {
+    transform: rotate(-90deg) translate(10px);
+}
+
+.fixedNav span p {
+    margin: 90px 0;
+    display: inline-block;
+    color: #e3e3e3;
+}
+
+/*子菜单*/
+nav li dl {
+    background-color: #50b3d5;
+    position: absolute;
+    left: 50%;
+    z-index: 999;
+    transform: translateX(-50%);
+/ / js控制显示
+}
+
+nav li dl dd {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+nav li dl dd a {
+    width: 225px;
+    height: 40px;
+    display: block;
+    color: #fff;
+}
+
+nav li dl dd a:hover {
+    background-color: #f5f4f0;
+    color: #50b3d5;
+}
+
+/*导航部分结束*/
+
+/*白色背景*/
+.writeBgc {
+    height: 350px;
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+/*内容1开始*/
+/*左边部分*/
+.section1Left {
+    width: 485px;
+    height: 485px;
+    background: url("../images/21.jpg");
+    text-align: center;
+    padding: 0 25px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.section1Left h1 {
+    font: 100 56px/56px 'Roboto', arial;
+    color: #fff;
+    display: inline-block;
+    margin: 100px 0 0;
+}
+
+.section1Left p {
+    font: 300 16px/26px 'Roboto', arial;
+    color: #fff;
+    margin: 10px 0;
+}
+
+form {
+    position: relative;
+}
+
+.section1Left .inputText {
+    outline: none;
+    border: 0;
+    width: 195px;
+    height: 68px;
+    font-size: 18px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    background-color: #4d454e;
+    cursor: pointer;
+    transition: all .3s;
+    margin-bottom: 10px;
+}
+
+.section1Left .inputText:hover {
+    background-color: #463f38;
+}
+
+.section1Left input::placeholder {
+    color: #fff;
+}
+
+.section1Left .inputSubmit {
+    outline: none;
+    border: 0;
+    width: 235px;
+    height: 68px;
+    background-color: #fff;
+    color: #888;
+    font-size: 24px;
+    border-radius: 1px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.section1Left .inputSubmit:hover {
+    background-color: #463f38;
+    color: #fff;
+}
+
+.section1Left .dateList {
+    width: 521px;
+    height: 230px;
+    position: absolute;
+    top: -234px;
+    left: 216px;
+    z-index: 999;
+    display: none;
+}
+
+.section1Left .dateList1 {
+    left: 16px;
+}
+
+/*input中图标字体*/
+.section1Left .tuBiao1 {
+    position: absolute;
+    top: 10px;
+    left: 150px;
+    font-size: 42px;
+    color: #8d7c6d;
+}
+
+.section1Left .tuBiao2 {
+    left: 350px;
+}
+
+/*内容1右边部分*/
+.section1Right {
+    float: right;
+    height: 485px;
+    width: 715px;
+    overflow: hidden;
+    position: relative;
+}
+
+.section1Right .imgBox {
+    width: 3575px;
+    height: 100%;
+}
+
+.section1Right .imgBox img {
+    width: 715px;
+    height: 485px;
+    position: absolute;
+    opacity: 0.5;
+}
+
+/*小按钮样式*/
+.section1Right ol {
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+    z-index: 999;
+}
+
+.section1Right ol li {
+    width: 8px;
+    height: 8px;
+    border: 3px solid #fff;
+    float: left;
+    margin-left: 4px;
+    border-radius: 50%;
+    opacity: .5;
+    cursor: pointer;
+}
+
+.section1Right ol li.write {
+    opacity: 1;
+}
+
+/*图片盒子阴影*/
+.section1Right .imgBoxShadow {
+    height: 485px;
+    width: 715px;
+    background-color: rgba(0, 188, 255, 0.51);
+    float: left;
+    cursor: pointer;
+    transition: all .2s;
+    position: relative;
+    opacity: 0.9;
+}
+
+.section1Right .imgBoxShadow4 {
+    cursor: pointer;
+    /*background-color: rgba(255, 255, 255, 0.4);*/
+}
+
+.section1Right .imgBoxShadow4 .img02 {
+    opacity: 0;
+    transition: all .3s;
+}
+
+.section1Right .imgBoxShadow4 .img01 {
+    opacity: 1;
+    transition: all .3s;
+}
+
+.section1Right .imgBoxShadow4:hover .img01 {
+    opacity: 0;
+}
+
+.section1Right .imgBoxShadow4:hover .img02 {
+    opacity: .5;
+}
+
+.section1Right .imgBox .zuiHou {
+    float: right;
+}
+
+.section1Right .imgBoxShadow:hover {
+    background-color: rgba(0, 152, 204, 0.78);
+}
+
+.section1Right .imgBoxShadow .textMoney {
+    width: 360px;
+    height: 200px;
+    float: right;
+    text-align: right;
+    position: absolute;
+    top: 75px;
+    right: 75px;
+    transition: all .3s;
+}
+
+/*文字价格部分*/
+.textMoney h1 {
+    display: inline-block;
+    font-size: 85px;
+    color: #fff;
+}
+
+.textMoney p, .textMoney span {
+    font-size: 20px;
+    color: #fff;
+}
+
+.textMoney span {
+    margin-right: 20px;
+}
+
+.section1Right .imgBoxShadow:hover .textMoney {
+    transform: translateX(-10px) translateY(10px);
+}
+
+/*左右按钮部分*/
+.section1Right i {
+    color: #fff;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.section1Right .btnLeft {
+    left: -40px;
+}
+
+.section1Right .btnRight {
+    right: -40px;
+}
+
+.section1Right:hover .btnLeft {
+    left: 40px;
+}
+
+.section1Right:hover .btnRight {
+    right: 40px;
+}
+
+/*下方两个小按钮*/
+.sectionOne button {
+    width: 90px;
+    height: 30px;
+    outline: none;
+    border: 0;
+    background-color: #00a9e3;
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    border-radius: 1px;
+    font-size: 18px;
+    color: #888;
+    transition: all .3s;
+}
+
+.sectionOne button.write {
+    background-color: #fff;
+}
+
+.sectionOne .btnL {
+    right: 130px;
+}
+
+.sectionOne button:hover {
+    background-color: #50B3D5;
+    color: #fff;
+}
+
+/*内容2轮播开始*/
+.broadcast {
+    margin-top: 75px;
+    position: relative;
+    width: 1080px;
+    height: 615px;
+}
+
+.broadcast li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*opacity: 0;*/
+}
+
+/*.broadcast li.show{*/
+/*opacity: 1;*/
+/*z-index: 999;*/
+/*}*/
+
+.broadcast li img {
+    width: 1080px;
+    height: 615px;
+    vertical-align: top;
+}
+
+.broadcast > ul > li > a {
+    display: block;
+}
+
+.broadcast .inner {
+    height: 64px;
+    width: 280px;
+    background-color: rgba(235, 233, 233, 0.84);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    line-height: 64px;
+    text-align: center;
+}
+
+.broadcast .inner a {
+    color: #8c8c8c;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .4s;
+    font-size: 20px;
+}
+
+.broadcast .inner span {
+    display: block;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(97, 91, 85);
+    transition: all .4s;
+}
+
+.broadcast .inner:hover span {
+    width: 100%;
+}
+
+.broadcast .inner:hover a {
+    z-index: 999;
+    color: #fff;
+}
+
+.broadcast .inner:hover {
+    animation: myMove 2s;
+
+}
+
+/*动画*/
+@-webkit-keyframes myMove {
+    0% {
+        right: 0;
+    }
+    10% {
+        right: 20px;
+    }
+    20% {
+        right: 0;
+    }
+    30% {
+        right: 10px;
+    }
+    40% {
+        right: 0;
+    }
+    50% {
+        right: 5px;
+    }
+    60% {
+        right: 0;
+    }
+    70% {
+        right: 2px;
+    }
+    80% {
+        right: 0;
+    }
+}
+
+/*轮播按钮图标*/
+.broadcast i {
+    position: absolute;
+    z-index: 999;
+    bottom: 70px;
+    right: 80px;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.broadcast .broadcastLButton {
+    right: 135px;
+}
+
+.broadcast i:hover {
+    transform: scale(1.1);
+}
+
+/*内容2轮播结束*/
+
+/*内容3文字部分开始*/
+.sectionThree {
+    background-color: #fff;
+    margin-top: -40px;
+    padding: 100px 0 80px;
+}
+
+.sectionThree h1 {
+    font: 100 62px/72px 'Roboto', arial;
+    color: #2e91b3;
+}
+
+.sectionThree .innerP1 {
+    font: 100 24px/34px 'Roboto', arial;
+    color: #888;
+    margin: 35px 0 25px;
+}
+
+.sectionThree .innerP2 {
+    font: 300 16px/26px 'Roboto', arial;
+    color: #888;
+}
+
+/*内容3文字部分结束*/
+
+/*内容4开始*/
+.sectionFour {
+    height: 540px;
+    background: url("../images/13.jpg") no-repeat top center;
+    position: relative;
+}
+
+.sectionFour #moveBox {
+    width: 405px;
+    height: 405px;
+    background-color: rgba(255, 255, 255, 0.81);
+    position: absolute;
+    bottom: 20px;
+    left: 75px;
+    text-align: center;
+    padding: 85px 0;
+    box-sizing: border-box;
+    font: 100 52px/58px 'Roboto', arial;
+    color: #2e91b3;
+}
+
+/*内容4结束*/
+
+/*内容5开始*/
+
+.sectionFive {
+    margin-top: 210px;
+}
+
+/*内容5左边图片*/
+.section5Left {
+    float: left;
+    width: 715px;
+    height: 485px;
+    background-color: #00a9e3;
+    position: relative;
+    cursor: pointer;
+}
+
+.section5Left li {
+    height: 485px;
+    position: absolute;
+    display: none;
+}
+
+.section5Left li a {
+    display: block;
+    height: 100%;
+}
+
+.section5Left img {
+    width: 715px;
+    height: 100%;
+}
+
+.section5Left .imgBlock {
+    display: block;
+}
+
+.section5Left .outerShadow {
+    background-color: rgba(106, 186, 222, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .2s;
+}
+
+.section5Left .outerShadow p {
+    width: 440px;
+    height: 100px;
+    font: 300 24px/34px 'Roboto', arial;
+    text-align: right;
+    position: absolute;
+    top: 50px;
+    right: 70px;
+    color: #eee;
+    transition: all .2s;
+}
+
+.section5Left .outerShadow:hover p {
+    top: 75px;
+    right: 100px;
+}
+
+.section5Left .outerShadow:hover {
+    background-color: rgba(108, 179, 216, 0.76);
+}
+
+/*3个切换图片小按钮*/
+.section5Left button {
+    width: 100px;
+    height: 30px;
+    background-color: #2e91b3;
+    position: absolute;
+    right: 25px;
+    bottom: 20px;
+    outline: none;
+    border: 0;
+    color: #fff;
+    font-size: 18px;
+    transition: all .3s;
+}
+
+.section5Left button:hover {
+    background-color: #50b3d5;
+}
+
+.section5Left #button1 {
+    right: 245px;
+}
+
+.sectionFive #button2 {
+    right: 135px;
+}
+
+.section5Left button.bgcW {
+    background-color: #fff;
+    color: #594e48;
+}
+
+/*内容5右边*/
+.sectionFive .section5Right {
+    width: 485px;
+    height: 485px;
+    background: url("../images/21.jpg");
+    text-align: center;
+    padding: 0 25px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.section5Right h1 {
+    font: 100 56px/56px 'Roboto', arial;
+    color: #fff;
+    display: inline-block;
+    margin: 100px 0 0;
+}
+
+.section5Right p {
+    font: 300 16px/26px 'Roboto', arial;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.section5Right .inputText,
+.section5Right .inputSubmit {
+    outline: none;
+    border: 0;
+    width: 195px;
+    height: 68px;
+    font-size: 18px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    background-color: #4d453e;
+    cursor: text;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.section5Right input::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.section5Right .inputSubmit {
+    cursor: pointer;
+    background-color: #fff;
+    color: #888;
+    font-size: 26px;
+    padding: 0;
+    transition: all .3s;
+}
+
+.section5Right .inputSubmit:hover {
+    background-color: #463f38;
+    color: #fff;
+}
+
+.section5Right .inputCheckbox {
+    position: absolute;
+    bottom: 6px;
+    left: 12px;
+}
+
+.section5Right .checkboxText {
+    display: inline;
+    margin-left: 10px;
+}
+
+.section5Right .checkboxText a {
+    color: #2e91b3;
+}
+
+/*内容5结束*/
+
+/*页脚开始*/
+footer {
+    background-color: #fff;
+    margin-top: 80px;
+}
+
+footer .ftNav {
+    padding: 50px 0;
+}
+
+footer .ftNav li {
+    float: left;
+    margin-left: 40px;
+}
+
+footer .ftNav li a {
+    color: #888;
+}
+
+footer .ftNav li a:hover {
+    color: #2e91b3;
+}
+
+footer .ftNav li.book button {
+    width: 130px;
+    height: 40px;
+    background-color: #2e91b3;
+    color: #fff;
+    font-size: 15px;
+    outline: 0;
+    border: 0;
+    border-radius: 2px;
+    transition: all .3s;
+}
+
+footer .ftNav li.book button:hover {
+    opacity: .7;
+}
+
+footer .ftNav li.book {
+    margin-top: -10px;
+}
+
+/*footer中1*/
+footer .ftNavTwo {
+    padding: 60px 120px;
+    border: 1px solid #ccc;
+    border-right: 0;
+    height: 155px;
+    box-sizing: border-box;
+}
+
+.ftNavTwo ul {
+    float: left;
+}
+
+.ftNavTwo ul li {
+    float: left;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.ftNavTwo .ftNavTwo-ul1 a {
+    color: #888;
+}
+
+.ftNavTwo .ftNavTwo-ul1 a:hover {
+    color: #2e91b3;
+}
+
+/*footer中2*/
+.ftNavTwo .ftNavTwo-ul2 {
+    margin-left: 60px;
+    margin-top: -8px;
+}
+
+.ftNavTwo .ftNavTwo-ul2 li {
+    padding: 0 18px;
+}
+
+.ftNavTwo .ftNavTwo-ul2 a {
+    color: #2e91b3;
+    font-size: 38px;
+    transition: all .3s;
+}
+
+.ftNavTwo .ftNavTwo-ul2 a:hover {
+    opacity: .7;
+}
+
+/*footer中3电话信息*/
+.ftNavTwo .phoneNum {
+    float: right;
+    text-align: right;
+    margin: -15px 15px 0 0;
+    cursor: default;
+}
+
+.ftNavTwo .phoneNum p {
+    color: #2e91b3;
+    font: 100 28px/28px 'Roboto', arial;
+}
+
+.ftNavTwo .phoneNum span {
+    color: #888;
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+/*下*/
+.ftNavThree {
+    padding: 15px 100px 0;
+    height: 200px;
+    text-align: center;
+}
+
+.ftNavThree h3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.ftNavThree p {
+    margin-top: 40px;
+    color: #888;
+}
+
+.ftNavThree p a {
+    margin-left: 25px;
+    color: #888;
+    transition: all .3s;
+}
+
+.ftNavThree p a:hover {
+    color: #2e91b3;
+}
+
+.ftNavThree p img {
+    float: right;
+    margin-top: -10px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.ftNavThree p img:hover {
+    opacity: .5;
+}
+
+/*页脚结束*/
+
+
+
+
+
